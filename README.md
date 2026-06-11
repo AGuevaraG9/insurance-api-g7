@@ -1,0 +1,2 @@
+# isnurance-api-g7
+ML API PARA PRIMAS DE SEGUROS
