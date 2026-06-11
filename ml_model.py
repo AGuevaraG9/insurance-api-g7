@@ -23,11 +23,3 @@ def predict_charges(smoker, age, bmi):
     prediction = sc_y.inverse_transform(scaled_prediction)
 
     return round(prediction[0][0],2)
-
-# Ejemplo de uso:
-# Supongamos un no fumador de 30 años con un IMC de 25
-new_smoker = 0  # no smoker
-new_age = 30
-new_bmi = 25.0
-predicted_charge = predict_charges(new_smoker, new_age, new_bmi)
-print(f'Predicted insurance charge for a non-smoker, 30 years old, with BMI 25: {predicted_charge:.2f}')
