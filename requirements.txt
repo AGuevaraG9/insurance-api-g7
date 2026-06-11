@@ -3,3 +3,6 @@ uvicorn
 joblib
 numpy
 scikit-learn==1.9.0
+sqlalchemy
+python-decouple
+psycopg2-binary
