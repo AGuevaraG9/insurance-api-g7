@@ -21,8 +21,9 @@ def predict_charges(smoker, age, bmi):
     scaled_new_data = sc_x.transform(new_data)
     scaled_prediction = model.predict(scaled_new_data)
     prediction = sc_y.inverse_transform(scaled_prediction)
+    prediction_value = float(prediction[0][0])
 
-    return round(prediction[0][0],2)
+    return round(prediction_value,2)
 
 # Ejemplo de uso:
 # Supongamos un no fumador de 30 años con un IMC de 25

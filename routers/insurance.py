@@ -31,9 +31,9 @@ def create_insurance(data: InsuranceCreate,db: Session = Depends(get_db)):
     charges = predict_charges(smoker, age, bmi)
 
     new_insurance = Insurance(
-        smoker = data.smoker,
-        age = data.age,
-        bmi = data.bmi,
+        smoker = smoker,
+        age = age,
+        bmi = bmi,
         charges = charges
     )
     
